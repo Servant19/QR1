@@ -107,11 +107,11 @@
       const image = document.getElementById("image");
 
       // Secret encoded key: (not human-readable, not commented)
-      const encodedKey = "UlhFMTg5"; // do not expose what this decodes to
+      const encodedKey = "UlhFMTg5Mg=="; // do not expose what this decodes to
       const expectedKey = base64Decode(encodedKey);
 
       if (input === expectedKey) {
-        const encodedMsg = "VGhpcyBsYXllciB1bnZlaWxzIGl0c2VsZiB0byB0aG9zZSB3aG8gcHJlc3Mgb24uIEtub3cgdGhhdCBzdWNoIG11cm11cnMgYWxzbyBnYXRoZXIgbmVhciBvdGhlciB2ZXN0aWdlcyBpbiByZWQsIHN0YW5kaW5nIHdhdGNoLllvdXIgcGVyY2VwdGlvbiBpcyBzaGFycOKAlHdlbGwgZG9uZS4=";
+        const encodedMsg = "VGhpcyBsYXllciB1bnZlaWxzIGl0c2VsZiB0byB0aG9zZSB3aG8gcHJlc3Mgb24uIEtub3cgdGhhdCBzdWNoIG11cm11cnMgYWxzbyBnYXRoZXIgbmVhciBvdGhlciB2ZXN0aWdlcyBpbiByZWQsIHN0YW5kaW5nIHdhdGNoLiBZb3VyIHBlcmNlcHRpb24gaXMgc2hhcnAgd2VsbCBkb25lLg==";
         const decodedMsg = base64Decode(encodedMsg);
 
         messageDiv.innerText = decodedMsg;
