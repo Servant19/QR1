@@ -111,7 +111,7 @@
       const expectedKey = base64Decode(encodedKey);
 
       if (input === expectedKey) {
-        const encodedMsg = "VGhpcyBsYXllciB1bnZlaWxzIGl0c2VsZiB0byB0aG9zZSB3aG8gcHJlc3Mgb24uIEtub3cgdGhhdCBzdWNoIG11cm11cnMgYWxzbyBnYXRoZXIgbmVhciBvdGhlciB2ZXN0aWdlcyBpbiByZWQsIHN0YW5kaW5nIHdhdGNoLllvdXIgcGVyY2VwdGlvbiBpcyBzaGFycCB3ZWxsIGRvbmUu";
+        const encodedMsg = "VGhpcyBsYXllciB1bnZlaWxzIGl0c2VsZiB0byB0aG9zZSB3aG8gcHJlc3Mgb24uIEtub3cgdGhhdCBzdWNoIG11cm11cnMgYWxzbyBnYXRoZXIgbmVhciBvdGhlciBzaWduYWwgc2hyaW5lcywgc3RhbmRpbmcgd2F0Y2guWW91ciBwZXJjZXB0aW9uIGlzIHNoYXJwIHdlbGwgZG9uZS4=";
         const decodedMsg = base64Decode(encodedMsg);
 
         messageDiv.innerText = decodedMsg;
